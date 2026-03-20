@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>formularz</h1>
+    <form action="rejestracja.php" method="post" enctype="multipart/form-data" oninput="x.value=parseInt(a.value)">
+        <fieldset>
+            <legend>Dane osobowe</legend>
+                <ol>
+                    <li><label for="imie">Imie:</label>
+                        <input id="imie" type="text" required minlength="2" maxlength="50" placeholder autofocus></li>
+
+                    <li><label for="nazwisko">Nazwisko:</label>
+                        <input id="nazwisko" type="text" required maxlength="60"></li>
+
+                    <li><label for="email">Email:</label>
+                        <input id="email" type="email" required multiple></li>
+
+                    <li><label for="telefon">Telefon:</label>
+                        <input id="telefon" type="tel" pattern="[0-9]{9}" placeholder="123456789"></li>
+
+                    <li><label for="dataUrodzenia">Data Urodzenia:</label>
+                        <input id="dataUrodzenia" type="date" min="1900-01-01" max="2026-01-01"></li>
+
+                    <li><label for="plec">Płeć:</label>
+                        <input type="radio" id="html" name="plec" value="mężczyzna">
+                        <label for="html">mężczyzna</label>
+                        <input type="radio" id="css" name="plec" value="kobieta">
+                        <label for="css">kobieta</label>
+                        <input type="radio" id="javascript" name="plec" value="inne">
+                        <label for="javascript">inne</label>
+                    </li>
+
+                    <li><label for="pesel">PESEL:</label>
+                        <input id="pesel" type="password", pattern="[0-9]{11}", autocomplete="off"></li>
+
+                </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Adres</legend>
+            <ol>
+                <li>
+                    <label for="ulicaINumer">Ulica i numer:</label>
+                    <input id="ulicaINumer" type="text" required>
+                </li>
+
+                <li>
+                    <label for="KodPocztowy">Kod pocztowy:</label>
+                    <input id="KodPocztowy" type="text" pattern="[0-9]{2}-[0-9]{3}" placeholder="00-000">
+                </li>
+
+                <li>
+                    <label for="Miasto">Miasto:</label>
+                    <input id="Miasto" list="miasta">
+                    <datalist id="miasta">
+                        <option value="Gdańsk">
+                        <option value="Bydgoszcz">
+                        <option value="Szczecin">
+                        <option value="Gdynia">
+                        <option value="">
+                    </datalist>
+                </li>
+
+                <li>
+                    <label for="kraj">Kraj:</label>
+                    <select  name="kraj" id="kraj" required selected="Polska">
+                        <optgroup label="Europa">
+                            <option value="polska">Polska</option>
+                            <option value="turcja">Turcja</option>
+                            <option value="luksemburg">Luksemburg</option>
+                            <option value="grecja">Grecja</option>
+                        </optgroup>
+                        <optgroup label="Ameryka">
+                            <option value="meksyk">Meksyk</option>
+                            <option value="argentyna">Argentyna</option>
+                            <option value="dominikana">Dominikana</option>
+                            <option value="chile">Chile</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencje czytelnicze</legend>
+            <ol>
+                <li>
+                    <label for="gatunki1">lubie komedie</label>
+                    <input type="checkbox" id="gatunki1" name="gatunki1" value="komedia">
+                </li>
+                <li>
+                    <label for="gatunki2">Lubie nieboską komedie</label>
+                    <input type="checkbox" id="gatunki2" name="gatunki2" value="nieboska komedia">
+                </li>
+
+                <li>
+                    <label for="gatunki2">lubie boską komedie</label>
+                    <input type="checkbox" id="gatunki2" name="gatunki2" value="boska komedia">
+                </li>
+
+                <li>
+                    <label for="gatunki3">lubie ziemską komedie</label>
+                    <input type="checkbox" id="gatunki3" name="gatunki3" value="ziemska komedia">
+                </li>
+
+                <li>
+                    <label for="gatunki4">lubie piekielną komedie</label>
+                    <input type="checkbox" id="gatunki4" name="gatunki4" value="piekielna komedia">
+                </li>
+
+                <li>
+                    <label for="gatunki4">lubie inne komedie</label>
+                    <input type="checkbox" id="gatunki4" name="gatunki4" value="inne">
+                </li>
+                <li>
+                    <label for="liczbaKsiazek">Liczba ksiązek::</label>
+                    <input id="liczbaKsiazek" type="number" min="1" max="20" step="1" value="3">
+                </li>
+                <li>
+                    <label for="czas">Preferowana pora odwiedzin:</label>
+                    <input id="czas" type="time" min="07:00" max="22:00">
+                </li>
+                <li>
+                    <label for="a">Aktywność czytelnicza:</label>
+                    <input id="a" type="range" min="0" max="10" step="1">
+                    <output name="x" for="a">1</output>
+                </li>
+                <li>
+                    <label for="b">kolor:</label>
+                    <input id="b" type="color" value="#3498db">
+                </li>
+                <li>
+                    <label for="link">link do profily:</label>
+                    <input id="link" type="url" placeholder="https://">
+                </li>
+                <li>
+                    <label for="zdjecie">Zdjecie:</label>
+                    <input type="file" accept="image/png, image/jpeg">
+                </li>
+                <li>
+                    <label for="komentarz">komentarz:</label>
+                    <textarea id="kometarz" name="komentarz" rows="4" cols="30"></textarea>
+                </li>
+            </ol>
+        </fieldset>
+        <a><label for="meter">Wypełnienie profilu:</label>
+        <meter id="meter" value="0.4" min="0" max="1" low="0.3" high="0.7" optimum="0.9"></a><br>
+        <a><label for="progress">Postęp weryfikacji konta:</label>
+        <progress id="progress" value="25" max="100"></a><br>
+        <button type="submit" value="Submit">Zarejestruj się</button>
+        <button type="reset" value="Reset">Wyczyść formularz</button>
+
+
+
+    </form>
+
+
+
+</body>
+</html>
