@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+}
+:is(h1, h2, h3) {
+   font-family: serif;
+}
+header {
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(50, 50, 70);
+    color: rgb(250, 250, 250);
+    font-size: 24px;
+    #top{
+        text-shadow: 4px 4px 3px black, 5px 0px 3px black, 0px 5px 3px black;
+    }
+    ul {
+        list-style-type: none;
+        color: red;
+    }
+    h1 {
+        font-size: 100px;
+        letter-spacing: 9px;
+        text-transform: uppercase;
+    }
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+
+}
+ul li{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+ul li li{
+
+    font-weight: normal;
+}
+.external{
+    a {
+        color: rgb(200,200,200);
+        font-style: italic;
+
+    }
+}
+.newWindow{
+    a {
+        text-decoration: underline;
+    }
+}
+.lead {
+    font-style: italic;
+    font-size: 30px;
+    word-spacing: 5px;
+    line-height: 1.8;
+}
+blockquote {
+    background-color: #CD5C5C;
+    border-style: solid;
+    border-width: 3px;
+    border-color: blue;
+    font-style: italic;
+    font-size: 25px;
+    p {
+        text-align: right;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+details{
+    summary {
+        font-weight: bold;
+        color: red;
+    }
+    dl > * {
+        color: rgb(50,50,150);
+        word-spacing: 5px;
+    }
+}
