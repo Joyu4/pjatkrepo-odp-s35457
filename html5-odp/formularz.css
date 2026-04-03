@@ -15,6 +15,7 @@ header {
         color: white;
         font-style: italic;
     }
+    letter-spacing: 5px;
 }
 footer {
     padding: 40px;
@@ -32,7 +33,8 @@ nav{
         font-size: 20px;
     }
     ol.breadcrumb li a {
-        color: #0275d8;
+        color: red;
+        text-decoration: none;
     }
     #bibo{
        font-weight: bolder;
@@ -114,6 +116,9 @@ legend{
     }
     label[for="pleco"]{
         font-style: italic;
+    }
+    #fieldset3 textarea{
+        background-color: red;
     }
     .required:after {
         content:" *";

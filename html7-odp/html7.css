@@ -1,0 +1,95 @@
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+    z-index: 1;
+    height: 60px;
+}
+#header{
+width:100%;
+}
+#headerContent{
+width: 100vw;
+}
+panel {
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 300px;
+    background-color: blue;
+    overflow-y:auto;
+    height: 100vw;
+}
+main {
+    margin-top: 60px;
+    margin-left: 300px;
+}
+main div {
+    display: inline-block;
+    padding: 5px;
+    border: 3px solid;
+}
+main zadan {
+    display: inline-block;
+    padding: 5px;
+    border: 3px solid;
+    width: 100%;
+    margin: 3px;
+}
+main button {
+    display: inline-block;
+    padding: 7px;
+    border: 3px solid;
+}
+#wybrany {
+    background-color: green;
+}
+panel input {
+    width: 100%;
+    box-sizing: borber-box;
+}
+panel textarea {
+    width: 100%;
+    box-sizing: borber-box;
+}
+panel select {
+    width: 100%;
+    box-sizing: borber-box;
+}
+.niski{
+    background-color: rgb(30,220,30);
+
+}
+.sredni{
+    background-color: rgb(220,220,30);
+}
+zadan {
+    position: relative;
+    .prio{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        padding: 5px;
+        background-color: rgb(100,100,100);
+    }
+}
+.wysoki{
+    background-color: rgb(220,30,30);
+}
+.badge {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3px;
+}
+.dzrob{
+    background-color: rgb(150,0,150);
+
+}
+.wtrak{
+    background-color: rgb(250,150,100);
+}
+.koniec{
+    background-color: rgb(0,150,150);
+}

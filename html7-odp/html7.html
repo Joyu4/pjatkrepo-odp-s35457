@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="html7.css" rel="stylesheet"
+            type="text/css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="headerContent">
+                <h1>menedźer zadań</h1>
+            </div>
+        </div>
+    </header>
+    <panel>
+        aious
+        <form>
+        <fieldset id="fieldset1">
+            <legend id="zadania">Formularz dodawania zadania</legend>
+                <ol>
+                    <li><label for="tytul">Tytuł:</label><br>
+                        <input id="tytul" type="text" required></li>
+
+                    <li><label for="kateg">Kategoria:</label><br>
+                    <select  name="katego" id="kateg" required>
+                        <option value="praca">Praca</option>
+                        <option value="dom">Dom</option>
+                        <option value="nauka">Nauka</option>
+                        <option value="zdrowie">Zdrowie</option>
+                        <option value="inne">Inne</option>
+                    </select>
+                    </li>
+
+                    <li><label for="prior">Priorytet:</label></span><br>
+                         <select  name="priori" id="prior" required>
+                        <option value="niski">Niski</option>
+                        <option value="sredni">Średni</option>
+                        <option value="wysoki">Wysoki</option>
+                    </select>
+                    </li>
+
+                    <li><label for="data">Data Wykonania:</label></span><br>
+                        <input id="data" type="date" required>
+                    </li>
+
+                    <li><label for="opis">Opis:</label></span><br>
+                        <textarea id="opis"></textarea>
+                    </li>
+
+                    <li><label for="status">Priorytet:</label></span><br>
+                    <select  name="stan" id="status" required>
+                        <option value="robione">do zrobienia</option>
+                        <option value="wTrakcie">w trakcie</option>
+                        <option value="zakonczone">zakończone</option>
+                    </select>
+                    </li>
+                    <button type="submit" value="Submit">Zapisz zadanie</button>
+                </ol>
+        </fieldset>
+        </form>
+
+
+    </panel>
+    <main>
+        <div>
+            Wszystkie: 6
+        </div>
+        <div>
+            Do zrobienia: 3
+        </div>
+        <div>
+            W trakcie: 2
+        </div>
+        <div>
+            zakończone: 1
+        </div>
+        <br>
+        <button>Tytuł</button>
+        <button id="wybrany">Priorytet</button>
+        <button>Data</button>
+        <button>Kategoria</button><br>
+
+        <zadan class="wysoki"><a>zrób strone html</a>
+        <br>kategoria: nauka
+        <br>data: 3.04.2026
+        <br>opis:
+        <br><span class="badge dzrob">Do zrobienia</span>
+        <span class="prio">wysoki</span>
+        </zadan><br>
+
+        <zadan class="niski"><a>zbuduj dom</a>
+        <br>kategoria: inne
+        <br>data: 13.02.2026
+        <br>opis:
+        <br><span class="badge wtrak">W trakcie</span>
+        <span class="prio">niski</span>
+        </zadan><br>
+
+        <zadan class="niski"><a>wynieść śmieci</a>
+        <br>kategoria: inne
+        <br>data: 23.03.2026
+        <br>opis:
+        <br><span class="wtrak badge">W trakcie</span>
+        <span class="prio">niski</span>
+        </zadan><br>
+
+        <zadan class="sredni"><a>zbuduj fabryke</a>
+        <br>kategoria: praca
+        <br>data: 2.02.2022
+        <br>opis:
+        <br><span class="badge koniec">Zakończone</span>
+        <span class="prio">średni</span>
+        </zadan><br>
+
+        <zadan class="niski"><a>zbuduj kota</a>
+        <br>kategoria: nauka
+        <br>data: 3.11.2025
+        <br>opis:
+        <br><span class="badge dzrob">Do zrobienia</span>
+        <span class="prio">niski</span>
+        </zadan><br>
+
+        <zadan class="sredni"><a>ugotować obiad</a>
+        <br>kategoria: dom
+        <br>data: 1.05.2026
+        <br>opis:
+        <br><span class="badge koniec">Zakończone</span>
+        <span class="prio">średni</span>
+        </zadan><br>
+
+    </main>
+</body>
+</html>
